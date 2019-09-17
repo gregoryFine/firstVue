@@ -159,7 +159,7 @@ export default {
         address: "Ottawa No. 2 Lake Park"
       }
     ];
-    this.columns1 = columns1.call(this);
+    this.columns1 = columns1.call(this);//////////////////////
     this.columns7 = columns.call(this);
   },
   mounted() {
