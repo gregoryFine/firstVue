@@ -15,15 +15,19 @@
       :searchKey="searchKey"
     ></List>
     <div :style="{width:'300px',height:'300px'}" id="echarts_test"></div>
+    <firstPreview v-if="isPreviewShow" :theIndex = "theIndex"></firstPreview>
   </div>
 </template>
 <script>
 import { columns, columns1 } from "./table";
 import List from "../../components/List";
+import firstPreview from './firstPreview'
 export default {
   data() {
     const that = this;
     return {
+      isPreviewShow: true,
+      theIndex : 0,
       pObj: { name: "fuck you", age: 18, address: "fuck street" },
       columns7: [],
       data6: [],
@@ -133,6 +137,10 @@ export default {
           }
         })
         .catch(err => {});
+    },
+    firstPreview(index){
+      this.theIndex = index;
+      this.isPreviewShow = true;
     }
   },
   created() {
@@ -166,7 +174,8 @@ export default {
     // this.createEchats();
   },
   components: {
-    List
+    List,
+    firstPreview
   }
 };
 </script>
