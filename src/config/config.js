@@ -6,6 +6,9 @@ Path.install = Vue => {
         basePath : basePath,
         basic : {
             test : basePath + 'test/test'
+        },
+        con : {
+            toGetBase : basePath + 'con/toGetBase'
         }
     }
 };

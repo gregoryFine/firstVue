@@ -21,7 +21,8 @@
 <script>
 import { columns, columns1 } from "./table";
 import List from "../../components/List";
-import firstPreview from './firstPreview'
+import firstPreview from './firstPreview1'
+import PDFJS from 'pdfjs-dist'
 export default {
   data() {
     const that = this;
