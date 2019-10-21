@@ -43,8 +43,8 @@ export function columns(){
                   },
                   on: {
                     click: () => {
-                      //this.showInfo(params.index);
-                      this.firstPreview(params.index);
+                      this.showInfo(params.index);
+                      //this.firstPreview(params.index);
                     }
                   }
                 },

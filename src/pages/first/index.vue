@@ -27,7 +27,7 @@ export default {
   data() {
     const that = this;
     return {
-      isPreviewShow: true,
+      isPreviewShow: false,
       theIndex : 0,
       pObj: { name: "fuck you", age: 18, address: "fuck street" },
       columns7: [],
@@ -141,7 +141,7 @@ export default {
     },
     firstPreview(index){
       this.theIndex = index;
-      this.isPreviewShow = true;
+      this.isPreviewShow = false;
     }
   },
   created() {
