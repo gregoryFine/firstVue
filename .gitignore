@@ -12,3 +12,5 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
+src/assets/image/bb.jpg
+src/assets/image/aa.jpg
