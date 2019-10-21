@@ -12,19 +12,11 @@
       <div class="color_main">您当前的位置：{{currentPageName}}</div>
       <div class="main_bg">
         <span v-for="item in data" :key="item.key">
-          <Button
-            v-if="item.isCurrent"
-            :style="{'margin-left':marginPx}"
-            class="click_current"
-          >
+          <Button v-if="item.isCurrent" :style="{'margin-left':marginPx}" class="click_current">
             <span class="click_text" @click="gotoPage(item)">{{item.name}}</span>
             <Icon v-if="item.path != '/first' " @click="close(item.path)" type="ios-close"></Icon>
           </Button>
-          <Button
-            v-else
-            :style="{'margin-left':marginPx}"
-            class="click_but"
-          >
+          <Button v-else :style="{'margin-left':marginPx}" class="click_but">
             <span class="click_text" @click="gotoPage(item)">{{item.name}}</span>
             <Icon v-if="item.path != '/first' " @click="close(item.path)" type="ios-close"></Icon>
           </Button>
@@ -52,7 +44,7 @@ export default {
   data() {
     return {
       leftMenuOpened: true,
-      marginPx:'5px'
+      marginPx: "5px"
     };
   },
   methods: {
@@ -92,7 +84,7 @@ export default {
   padding: 0;
   color: #000000;
   border: solid 1px red;
-  background:rgb(231, 75, 36);
+  background: rgb(231, 75, 36);
 }
 .click_text {
   color: #000000;

@@ -48,13 +48,13 @@
 </template>
 <script>
 import Breadcrumb from "../header/Breadcrumb";
-import indexMixin from './indexMixin'
+import indexMixin from "./indexMixin";
 export default {
-  mixins:[indexMixin],
+  mixins: [indexMixin],
   components: {
     Breadcrumb
   }
-}
+};
 </script>
 <style scoped>
 .layout {
