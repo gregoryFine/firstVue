@@ -119,12 +119,9 @@ export default {
 
 <style scoped>
 .preview_main {
-  position: absolute;
   width: 98%;
   height: 98%;
-  left: 1%;
-  top: 1%;
-  border: solid 1px red;
+  border: solid 0px red;
   border-radius: 5px;
   z-index: 5;
   background: #ffffff;

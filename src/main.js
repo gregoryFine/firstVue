@@ -13,6 +13,7 @@ import Vuex from 'vuex'
 import storeConfig from './store'
 
 import request from './plugins/request'
+import util from './plugins/utils'
 
 import path from './config/config';
 
@@ -22,15 +23,17 @@ import pdfjs from 'pdfjs'
 import pdfjsdist from 'pdfjs-dist'
 
 
+
 Vue.config.productionTip = false;
 Vue.prototype.$echarts = Echarts; // 使用echarts 必须 放入 vue 文件中的 mounted 方法中，放入created 方法中不可以
 
 /* eslint-disable no-new */
-Vue.use(iView);
+Vue.use(iView, {transfer:true});
 Vue.use(VueRouter);
 Vue.use(Vuex);
 Vue.use(request);
 Vue.use(path);
+Vue.use(util);
 
 Vue.prototype.$pdfjs = pdfjs
 
