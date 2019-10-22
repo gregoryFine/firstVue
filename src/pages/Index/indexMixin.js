@@ -58,8 +58,8 @@ export default {
                 return;
             }
             let indexSelected = -1;
-            for (let key in this.dataMenu) {
-                this.dataMenu[key].isCurrent = false;
+            for (let i in this.dataMenu) {
+                this.dataMenu[i].isCurrent = false;
             }
             for (let index = 0; index < this.dataMenu.length; index++) {
                 if (path == this.dataMenu[index].path) {
@@ -75,7 +75,7 @@ export default {
                         continue;
                     }
                     let obj = this.$deepCopy(this.routeNameArr[index]);
-                    obj.key = new Date().getTime();
+                    obj.key = this.uuid();
                     obj.isCurrent = true;
                     this.currentPageName = obj.name;
                     this.dataMenu.push(obj);

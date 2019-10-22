@@ -64,8 +64,8 @@ export default {
 .full {
   margin: 0;
   padding: 0;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
 }
 .sider {
   border-right: 1px solid #eee;
@@ -76,6 +76,7 @@ menuitem {
 }
 .main_content {
   background: #ffffff;
+  overflow:auto;
 }
 .content {
   padding: 92px 3px 20px 20px;
