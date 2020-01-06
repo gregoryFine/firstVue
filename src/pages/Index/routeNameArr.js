@@ -18,7 +18,13 @@ export const routeNameArr = [
         id: '5-1',
         name: '测试管理2',
         path: '/testtwo'
+    },
+    {
+        id: '6-1',
+        name: 'marquee测试',
+        path: '/marqueetest'
     }
+
 ]
 
 export const menu = [
@@ -53,6 +59,17 @@ export const menu = [
                 menuId: "5-1",
                 name: "测试管理2-1",
                 path: "/testtwo"
+            }
+        ]
+    },
+    {
+        menuId: "6",
+        name: "marquee测试",
+        items: [
+            {
+                menuId: "6-1",
+                name: "arquee测试",
+                path: "/marqueetest"
             }
         ]
     }

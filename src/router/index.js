@@ -6,6 +6,7 @@ import pdfpre from '@/pages/pdfpre'
 import pdfpre1 from '@/pages/pdfpre1'
 import testone from '@/pages/testone'
 import testtwo from '@/pages/testtwo'
+import marqueetest from '@/pages/marqueetest'
 
 
 export default {
@@ -65,7 +66,12 @@ export default {
         {
           path:'testtwo',
           component: testtwo
-        }
+        },
+        {
+          path:'marqueetest',
+          component: marqueetest
+        },
+
       ]
     }
   ]
