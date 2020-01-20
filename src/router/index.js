@@ -7,6 +7,7 @@ import pdfpre1 from '@/pages/pdfpre1'
 import testone from '@/pages/testone'
 import testtwo from '@/pages/testtwo'
 import marqueetest from '@/pages/marqueetest'
+import treetest from '@/pages/treetest'
 
 
 export default {
@@ -71,6 +72,12 @@ export default {
           path:'marqueetest',
           component: marqueetest
         },
+        {
+          path:'treetest',
+          component:treetest
+        },
+          
+          
 
       ]
     }
